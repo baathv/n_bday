@@ -1,6 +1,6 @@
 (() => {
   'use strict';
-  const defaults = {recipientName:'Birthday Girl',senderName:'Your Friend',birthday:'2026-11-09',headline:'the world got luckier the day you arrived.',miniNote:'A little celebration, just for you.',letter:['Happy birthday! You deserve a wonderful day.'],gifts:[]};
+  const defaults = {recipientName:'Nilima',senderName:'Velly',birthday:'2026-11-09',headline:'the world got luckier the day you arrived.',miniNote:'A little celebration, just for you.',letter:['Happy birthday! You deserve a wonderful day.'],gifts:[]};
   const cfg = {...defaults,...(window.BIRTHDAY_CONFIG || {})};
   const $ = (id) => document.getElementById(id);
   const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
@@ -84,7 +84,7 @@
   const candleButton = $('candleButton');
   const cakeHint = $('cakeHint');
   const AudioContextType = window.AudioContext || window.webkitAudioContext;
-  const MIN_BLOW_RMS = 0.095; // Lower to 0.025 if the microphone is less sensitive.
+  const MIN_BLOW_RMS = 0.075; // Lower to 0.025 if the microphone is less sensitive.
   const BLOW_HOLD_MS = 180;   // Require sustained airflow, not just a short noise.
   const CALIBRATION_MS = 550;
   let candleOut = false;
