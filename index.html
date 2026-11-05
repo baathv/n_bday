@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#ffdee9" />
+  <meta name="description" content="A little corner of the internet full of birthday magic, hearts, and surprises." />
+  <title>A little birthday magic ♡</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=DM+Serif+Display:ital@0;1&family=Pacifico&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css?v=2" />
+  <script src="config.js" defer></script>
+  <script src="script.js?v=2" defer></script>
+</head>
+<body>
+  <div class="background-stars" aria-hidden="true"></div>
+  <div class="floating-hearts" id="ambientHearts" aria-hidden="true"></div>
+  <div class="confetti-layer" id="confettiLayer" aria-hidden="true"></div>
+  <div class="cursor-layer" id="cursorLayer" aria-hidden="true"></div>
+
+  <header class="site-header wrap">
+    <a class="logo" href="#home" aria-label="Back to top"><span class="logo-mark">♡</span> little joys club<span class="logo-dot">.</span></a>
+    <nav class="site-nav" aria-label="Jump to">
+      <a href="#letter">the letter</a>
+      <a href="#gifts">little gifts</a>
+      <a href="#game">heart rush</a>
+    </nav>
+    <button class="header-heart icon-button" id="headerHeart" aria-label="Send a heart" title="Send some love">♥</button>
+  </header>
+
+  <main>
+    <section class="hero wrap" id="home">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="eyebrow-sparkle">✳</span> a tiny website for a very big day <span>✳</span></div>
+        <h1>Hey, <span class="hero-name" id="heroName">birthday girl</span><span class="heart-period">♥</span><br><em>it's your moment.</em></h1>
+        <p class="hero-subtitle" id="heroHeadline">the world got luckier the day you arrived.</p>
+        <p class="hero-description" id="heroMiniNote">For the laughs, the late-night talks, the tiny adventures and every moment in between.</p>
+        <div class="hero-ctas">
+          <button class="button button-primary" id="unwrapButton">Open your surprise <span aria-hidden="true">↗</span></button>
+          <button class="button button-secondary" id="magicButton">Make some magic ✨</button>
+        </div>
+        <div class="countdown-panel" aria-live="off">
+          <div class="countdown-header"><span class="live-dot"></span><span id="countdownLabel">counting down to november 9</span></div>
+          <div class="countdown-numbers" id="countdown">
+            <div><strong id="days">00</strong><small>days</small></div>
+            <span class="countdown-colon">:</span>
+            <div><strong id="hours">00</strong><small>hours</small></div>
+            <span class="countdown-colon">:</span>
+            <div><strong id="minutes">00</strong><small>mins</small></div>
+            <span class="countdown-colon">:</span>
+            <div><strong id="seconds">00</strong><small>secs</small></div>
+          </div>
+        </div>
+      </div>
+      <div class="hero-art">
+        <div class="art-halo"></div>
+        <div class="floating-sticker sticker-one">100%<br>iconic ✨</div>
+        <div class="floating-sticker sticker-two">made with<br>♡ love ♡</div>
+        <div class="art-sparkle sparkle-a">✦</div><div class="art-sparkle sparkle-b">✳</div>
+        <div class="art-heart heart-a">♥</div><div class="art-heart heart-b">♥</div>
+        <div class="cake-scene" role="img" aria-label="A pink two-tier birthday cake with a candle. Click the candle to make a wish.">
+          <div class="cake-plate"></div>
+          <div class="cake-bottom"><div class="bottom-frosting"></div><span class="cake-dot dot1"></span><span class="cake-dot dot2"></span><span class="cake-dot dot3"></span><span class="cake-dot dot4"></span></div>
+          <div class="cake-top"><div class="top-frosting"></div><span class="tiny-heart t1">♥</span><span class="tiny-heart t2">♥</span><span class="tiny-heart t3">♥</span></div>
+          <button class="candle" id="candleButton" aria-label="Blow out the birthday candle"><span class="flame" id="candleFlame"></span><span class="wick"></span><span class="candle-stick"></span></button>
+          <div class="cake-shadow"></div>
+        </div>
+        <div class="cake-hint" id="cakeHint">psst… tap the candle & make a wish ↗</div>
+      </div>
+    </section>
+
+    <div class="marquee-band" aria-hidden="true"><div class="marquee-content">✳ YOU'RE THE MOMENT &nbsp; ♥ &nbsp; HAPPY BIRTHDAY BABE &nbsp; ✳ &nbsp; MORE LIFE, MORE SPARKLE &nbsp; ♥ &nbsp; MAKE A WISH &nbsp; ✳ &nbsp; YOU'RE THE MOMENT &nbsp; ♥ &nbsp; HAPPY BIRTHDAY BABE &nbsp; ✳ &nbsp; MORE LIFE, MORE SPARKLE &nbsp; ♥ &nbsp; MAKE A WISH &nbsp; </div></div>
+
+    <section class="letter-section section-space wrap" id="letter">
+      <div class="section-kicker">01 / sealed with a little extra love</div>
+      <h2>A note <em>just for you.</em></h2>
+      <p class="section-intro">Because some things are better said with a little pink envelope.</p>
+      <div class="letter-stage">
+        <div class="sticker-side side-left" aria-hidden="true">you<br>got<br>mail! ↘</div>
+        <button class="envelope" id="envelopeButton" aria-label="Open your birthday letter" aria-expanded="false">
+          <span class="envelope-paper"><span class="paper-heart">♥</span><span>just for you</span></span>
+          <span class="envelope-back"></span>
+          <span class="envelope-flap"></span>
+          <span class="envelope-front"></span>
+          <span class="seal">♡</span>
+        </button>
+        <div class="sticker-side side-right" aria-hidden="true">✳<br>xo xo</div>
+      </div>
+      <p class="tap-label" id="envelopeHint">tap the envelope to open it</p>
+      <div class="letter-card" id="letterCard" hidden tabindex="-1">
+        <div class="letter-card-header"><span>to: <b id="letterRecipient">birthday girl</b> 💌</span><button class="close-letter" id="closeLetter" aria-label="Close letter">×</button></div>
+        <div id="letterText" class="letter-text"></div>
+        <p class="letter-signature">with so much love,<br><span id="letterSender">Your Friend</span> ♡</p>
+      </div>
+    </section>
+
+    <section class="gifts-section section-space" id="gifts">
+      <div class="wrap">
+        <div class="section-kicker">02 / three little reasons to smile</div>
+        <h2>Click to unwrap <em>some love.</em></h2>
+        <p class="section-intro">Not all presents come in boxes. Some come with sweet words (and a whole lot of sparkle).</p>
+        <div class="gift-grid" id="giftGrid">
+          <button class="gift-card gift-pink" data-gift="0" aria-label="Unwrap gift one"><span class="gift-number">gift no. 01</span><span class="gift-visual">🎀</span><span class="gift-instruction">unwrap me <span>↗</span></span></button>
+          <button class="gift-card gift-lavender" data-gift="1" aria-label="Unwrap gift two"><span class="gift-number">gift no. 02</span><span class="gift-visual">💝</span><span class="gift-instruction">unwrap me <span>↗</span></span></button>
+          <button class="gift-card gift-peach" data-gift="2" aria-label="Unwrap gift three"><span class="gift-number">gift no. 03</span><span class="gift-visual">💌</span><span class="gift-instruction">unwrap me <span>↗</span></span></button>
+        </div>
+        <div class="gift-reveal" id="giftReveal" hidden aria-live="polite">
+          <span id="giftRevealEmoji" class="reveal-emoji">💖</span>
+          <div><p class="reveal-small">SURPRISE! THIS ONE'S FOR YOU</p><h3 id="giftRevealTitle"></h3><p id="giftRevealText"></p></div>
+          <button class="reveal-close" id="closeGift" aria-label="Close gift">×</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="game-section section-space wrap" id="game">
+      <div class="game-copy">
+        <div class="section-kicker">03 / a little something extra</div>
+        <h2>Let's play <em>heart rush!</em></h2>
+        <p class="section-intro">Tap the arcade or press Start, then catch as many hearts as you can in 20 seconds. Works on phones, too!</p>
+        <div class="game-stats">
+          <div><span>your score</span><strong id="gameScore">0</strong></div>
+          <div><span>time left</span><strong id="gameTime">20s</strong></div>
+          <div><span>best</span><strong id="gameBest">0</strong></div>
+        </div>
+        <button class="button button-primary" id="startGame">Start catching ♡ <span aria-hidden="true">↗</span></button>
+      </div>
+      <div class="game-board" id="gameBoard" aria-label="Love Arcade. Tap or press Enter to start the heart-catching game" tabindex="0">
+        <div class="board-mesh" aria-hidden="true"></div>
+        <div class="board-top"><span>♡ THE LOVE ARCADE</span><span>♡♡♡</span></div>
+        <div class="board-center" id="boardMessage"><span class="board-big-heart">♥</span><strong>ready, bestie?</strong><small>tap anywhere here to play!</small></div>
+        <div class="board-bottom">a lil' serotonin boost, just for you ✳</div>
+      </div>
+    </section>
+
+    <section class="wish-section section-space" id="wish">
+      <div class="wrap wish-content">
+        <div class="tiny-stars" aria-hidden="true">✦ &nbsp; ✳ &nbsp; ♥ &nbsp; ✦</div>
+        <div class="section-kicker">04 / one last birthday wish</div>
+        <h2>May all your <em>little wishes</em><br>come true.</h2>
+        <p>Here's to more memories, more magic, more love, and an absolutely wonderful year ahead.</p>
+        <button class="button button-white" id="lastSurprise">One last surprise 💗</button>
+        <div class="wish-sticker" aria-hidden="true">forever<br>your fan<br>✳</div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer wrap"><span>made with <span class="footer-heart">♥</span> and a suspicious amount of pink</span><span>november 9, 2026 · just for you ♡</span></footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <div class="surprise-modal" id="surpriseModal" hidden>
+    <div class="modal-backdrop" data-close-modal="true"></div>
+    <div class="surprise-dialog" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="modal-close" id="modalClose" aria-label="Close surprise">×</button>
+      <div class="modal-stars" aria-hidden="true">✷ ✦ ♡ ✦ ✷</div>
+      <div class="modal-emoji">💖</div>
+      <h2 id="modalTitle">You are SO loved!</h2>
+      <p id="modalMessage">This is your reminder that you're pretty amazing. Hope your birthday is just as wonderful as you are.</p>
+      <button class="button button-primary" id="modalMoreHearts">More hearts, please! ♥</button>
+    </div>
+  </div>
+</body>
+</html>
