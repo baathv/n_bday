@@ -396,7 +396,7 @@
   function openModal(){
     lastFocusedElement=document.activeElement;
     $('surpriseModal').hidden=false;document.body.style.overflow='hidden';$('modalClose').focus();confetti(100);
-    $('modalMessage').textContent=`${escapeName}, this little corner of the internet exists for one reason: to remind you that you make life sweeter just by being in it. Happy birthday! ♡`;
+    $('modalMessage').textContent=`${escapeName}, this little corner of the internet exists for one reason: to remind you that you make life sweeter just by being in it. Happy birthday Motu! ♡ Abhi itna asha asha boldiya, aab toh party dedooooo!!!`;
   }
   function closeModal(){
     $('surpriseModal').hidden=true;document.body.style.overflow='';if(lastFocusedElement?.focus)lastFocusedElement.focus();
