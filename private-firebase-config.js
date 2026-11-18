@@ -6,11 +6,11 @@
  */
 globalThis.PRIVATE_UPDATES_CONFIG = {
   firebase: {
-    apiKey: "PASTE_API_KEY",
-    authDomain: "PASTE_PROJECT_ID.firebaseapp.com",
-    projectId: "PASTE_PROJECT_ID",
-    messagingSenderId: "PASTE_SENDER_ID",
-    appId: "PASTE_APP_ID"
+    apiKey: "AIzaSyCDOJ7DI1IQKmW_g6KpobkhKW-mmRqdZG4",
+    authDomain: "n-bday.firebaseapp.com",
+    projectId: "n-bday",
+    messagingSenderId: "546637359397",
+    appId: "1:546637359397:web:2fc500b31cf1ac092ad2cc"
   },
   // Firebase Console > Project settings > Cloud Messaging > Web Push certificates
   vapidKey: "PASTE_PUBLIC_VAPID_KEY"
