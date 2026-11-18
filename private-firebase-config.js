@@ -13,5 +13,5 @@ globalThis.PRIVATE_UPDATES_CONFIG = {
     appId: "1:546637359397:web:2fc500b31cf1ac092ad2cc"
   },
   // Firebase Console > Project settings > Cloud Messaging > Web Push certificates
-  vapidKey: "PASTE_PUBLIC_VAPID_KEY"
+  vapidKey: "BOEfDdl-MU8XG8Wt1xYZ4IkzcJ5F2F-8x171TW2-1qD6Bn1DbwK0IWWrmy0HrSncM28HqemP7laKQO2Q6Rjx6eM"
 };
